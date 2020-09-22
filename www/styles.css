@@ -1,0 +1,106 @@
+
+/*----------------------------------------------------------------*/
+/*               C S S  T H E M E  E D I T S                      */
+/*----------------------------------------------------------------*/
+
+/* This file modifies the bs4dash default them with some customisations
+to improve the visuals and usability. The "!important" forces the web page
+to override the CSS contained in the default file with the CSS below. This
+custom CSS should be sufficient for the dashboard in it's current state */
+
+/* If any of the CSS is unclear the best thing to do is to right click the 
+element on the live website, and select inspect element. A window detailing 
+the css should open. You will be able to work out from this what CSS is required
+to control which aesthetic of an element */
+
+/* Currently not functional */
+.link:hover { color: #FFCC00 !important; }
+
+/* Currently not functional */
+.card-body {
+  -webkit-tap-highlight-color:#FFCC00 !important;
+}
+
+/* Sets girafe containers to transparent */
+.girafe_container_std {
+  background-color: rgba(255, 255, 255, 0.0)!important;
+}
+
+.bg-gradient-warning {
+    background: #FF9E16 !important;
+}
+
+/* Graph Output Size */
+.girafe.html-widget.html-widget-output.shiny-bound-output {
+  max-width: 100vh !important;
+}
+
+/* Card Background on Dark Mode */
+.bg-gradient-dark {
+    background: #343a40 !important;
+}
+
+/* Card Background Fuchsia*/
+.bg-gradient-fuchsia {
+    background: #D84482 !important;
+}
+
+.bg-gradient-primary {
+    background: #00A33B !important;
+}
+
+/* Card Background on Light Mode */
+.bg-gradient-light {
+    background: #ffffff !important;
+}
+
+/* Transparent Background on Dark Mode */
+.bg-gradient-transparent {
+    background: #272c30 !important;
+    color: #fff !important;
+}
+
+/* Logo Bounding Box */
+.shiny-image-output.shiny-bound-output{
+  height: 90px !important;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* Toggle Padding for dark mode*/
+.shiny-input-container:not(.shiny-input-container-inline) {
+    padding-top: 9px !important;
+    padding-left: 20px !important;
+}
+
+/* Removes border in original theme */
+.brand-link{
+      border-bottom-width: 0px !important;
+}
+
+.sw-air-picker.form-control.shiny-bound-input{
+  background-color: rgba(255,255,255,0) !important;
+
+}
+
+.form-group.shiny-input-container{
+    padding-top: 9px !important;
+    padding-left: 20px !important;
+}
+
+.sw-air-picker.form-control{
+  color: #ffffff !important;
+}
+
+.airdatepicker--cell.-selected-, .airdatepicker--cell.-selected-.-current-{
+  background-color: #00A33B !important;
+  }
+
+.btn.action-button.input-group-addon.shiny-bound-input{
+  color:#ffffff !important;
+}
+
+/* TABLE STYLING */
+.tr.odd{
+  background-color: #00000000 !important;
+}
